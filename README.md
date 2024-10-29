@@ -1,6 +1,15 @@
 ### ExpenseManager
 
-to manage expenses
+The ExpenseManager app helps companies manage employee expenses easily. It allows employees to submit expense claims for items like travel, meals, and other work-related costs. Each expense claim includes details like the employee's name, the type of expense, the date, and the amount spent.
+
+A built-in approval process lets managers review and decide on each claim. When an employee submits a claim, it goes to "Submitted" status. The manager can then mark it as "Under Review" and either approve or reject it, updating the status accordingly. Permissions are role-based: only employees can submit claims, and only managers can approve or reject them. This app simplifies the expense reporting and approval process, making it easy for both employees and managers.
+
+
+
+
+
+
+
 
 ### Installation
 
@@ -12,21 +21,7 @@ bench get-app $URL_OF_THIS_REPO --branch develop
 bench install-app expensemanager
 ```
 
-### Contributing
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/expensemanager
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
 
 ### CI
 
